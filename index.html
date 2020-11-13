@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linz BMI Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="validation.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+  <h1>BODY MASS INDEX CALCULATOR</h1>
+  <img src="bmi.png" alt="BMI Logo"> <br>
+  <div class="container w-75">
+    <fieldset>
+<form id="bmiData">
+    <div class="form-group">
+        <label for="heightInch">Height in inches (5 foot = 60 inches 6 foot = 72 inches)</label>
+        <input name="heightInch" id="heightInch"  type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="weightPounds">weight in pounds</label>
+        <input name="weightPounds" id="weightPounds"  type="text" class="form-control">
+    </div>
+
+
+    <button class="btn btn-primary">Check your BMI</button>
+</form>
+    </fieldset>
+
+      <br><p id="message"></p>
+
+
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="code.js"></script>
+
+</html>
